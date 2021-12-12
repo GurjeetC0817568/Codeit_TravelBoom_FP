@@ -1,52 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/styles.css">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-    </head>
-    <body>
-        <header>
-            <h1>Connect with us</h1>   
-        </header>
-        <nav>
-            <a href="index.html" > Homepage </a> &nbsp; &nbsp;
-        </nav>
-        
-        <section class= "aside"> 
-            <ul>
-                <img src="Images/Email.png" alt="picture " width="50px" height="50px" align = "left">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Travel Boom</title>
+  </head>
+  <body>
+       
+      <div class="container-fluid">
+        <div class="row top-row-">
+          <div class="div-one-third">
+            <div class="top-container background-lowopacity-">
+              <img src="img/logo.png">
+            </div>
+          </div>
+          <div class="div-70-percent">
+           
+              <div class="navigation">
+              <nav class="navbar nav-mobileview navbar-light background-lowopacity- navigationbar">              
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav" id="nv">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home </a><div class="navigation-link-highlight"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a><div class="navigation-link-highlight"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="tours.html">Tours</a><div class="navigation-link-highlight"></div>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="contact.html">Contact</a><div class="navigation-link-highlight"></div>
+                    </li>
+                   <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <img src="img/togglemenu.png"></a>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+
+</div>
+ <!--slider strt--> 
+    <div class="full-width">
+        	<section class="">
                 
-                <a href="">
-                    <li></li>
-                </a> 
-                <img src="Images/Linkedin.png" alt="picture " width="50px" height="50px" align = "left">
-                <a href="">
-                    <li></li>
-                </a>
-                <img src="Images/Facebook.png" alt="picture " width="50px" height="50px" align = "left">
-                <a href="">
-                    <li></li>
-                </a>
-                <img src="Images/Github.png" alt="picture " width="50px" height="50px" align = "left">
-                <a href="">
-                    <li></li>
-                </a> 
-                <img src="Images/Snap.png" alt="picture " width="50px" height="50px" align = "left">
-                <a href="">
-                    <li></li>
-                </a>
-                <img src="Images/Insta'.png" alt="picture " width="50px" height="50px" align = "left">
-                <a href="">
-                    <li></li>
-                </a>
-            </ul>
-        </aside>
-        <footer>
-            <p>&copy;Copyright 2021 </p>
-            <p>All rights reserved</p>
+                <video autoplay muted="" loop id="myVideo">
+  <source src="img/video.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+            </section>
+        </div>
+       <div class="clear"></div>   
+    <!--slider end-->
+
+
+<div class="container-fluid padding50 text-center">
+<div class="fontstyle"><h1><span class="borderbottom">Contact Travel Boom</span></h1></div>
+<p><h2>Our History, Our Mission, Our Guides</h2></p>
+<p><button type="submit" class="btn btn-secondary" onClick="window.location = 'contact.html#contctform';">Contact Us</button></p>
+
+<div class="div-one-third floatleft margintop paddingtop paddingbottom">
+<img src="img/s1.jpg">
+</div>
+<div class="div-one-third floatleft margintop paddingtop paddingbottom">
+<img src="img/s1.jpg">
+</div>
+<div class="div-one-third floatleft margintop paddingtop paddingbottom">
+<img src="img/s1.jpg">
+</div>
+</div>
+ <div class="clear"></div>  
+
+ <div class="full-width"> 
+ <div class="container-fluid paddingtop">     
+
+        <section class="row" id="work-contact">
+          <div class="full-width">
+                 <div class="backgroungblackopacity text-center workhead testimonials-header">
+                    <h2 class="text-uppercase work-page-title testimonials-page-title">Contact Us</h2>
+                    <p class="work-description mb-0 small">
+                        Email: info@travelboom.com <br> Mobile: +141666666666
+                    </p>
+                </div>
+          </div>   
+        </section>
+
+        <section class="row contact-row" id="contctform">
+            <div class="halfwidth contact-col-left">
+            
+                <form action="#" method="POST" id="contactfrm" class="backgroungblackopacity contact-form">
+               <!--form will be here-->
+                </form>
+            </div>
+            <div class="halfwidth contact-col-right">
+                <div class="backgroungblackopacity contact-text">
+                            
+                     <img src="img/3.jpg" style="width:100%">
+                    
+                    <p class="work-tab-title">Canada Tour</p>
+                      <img src="img/3.jpg" style="width:100%">
+                    
+                    <p class="work-tab-title">London City Tour</p>
+                      <img src="img/3.jpg" style="width:100%">
+                    
+                    <p class="work-tab-title">Maldives Tour</p>
+                    
+                    <p><button type="button" class="btn btn-secondary" onClick="window.location = 'tours.html';">Explore Our Tours</button></p>
+
+                </div>
+            </div>
+        </section>
+
+ <script>
+function myFunction() {
+  var x = document.getElementById("nv");
+  if (x.className === "navbar-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar-nav";
+  }
+}
+</script>     
+
+          <footer class="row">
+          <p class="full-width text-white text-center copyright-text">
+            Copyright &copy; 2021  - All Rights Reserved
+          </p>
         </footer>
-    </body>
+      </div>
+    </div>
+
+   
+  </body>
 </html>
