@@ -577,6 +577,18 @@ body{font-size:15px;}
 .home-left {  max-width: 90%;  margin-right: 5%;  margin-left: 5%;  width: 90%;}
 
 .home-right {  width: 90%;  text-align: center;  margin: 20px 5% 5px 5%;;}
+.navbar-nav li {display: none;}
+.navbar-nav .icon {   float: right;   display: block; width:45px;padding:9px;  right: 10px; position: absolute; }
+.navigationbar {  min-height: 50px;}
+.navbar-nav.responsive {position: relative;}
+.navbar-nav.responsive .icon {position: absolute;right: 0;top: 0;}
+.navbar-nav.responsive li {float: none;display: block;width: 100%;  }
+.navbar-light.background-lowopacity { background-color: rgba(255, 255, 255, 0.0);}
+.navbar-nav.responsive,.nav-mobileview .navbar-collapse{background-color: rgba(255, 255, 255, 0.8);}
+.navbar-nav.responsive li a { text-align: center;}
+.nav-mobileview .navbar-nav { -ms-flex-direction: columns;flex-direction: column;}
+.nav-mobileview .navbar-nav .nav-link{padding:3px;}
+
 }
 
 
