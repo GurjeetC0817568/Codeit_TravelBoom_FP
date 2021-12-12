@@ -8,10 +8,30 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
     <link rel="stylesheet" href="css/main.css" />
+<script src="js/jquery.min.js-"></script>
   </head>
   <body>
   
+         
+     
+<script>
+function myFunction() {
+  var x = document.getElementById("nv");
+  if (x.className === "navbar-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar-nav";
+  }
+}
+</script>
+ 
+          
+          
+          
+
   
+  
+       
       <div class="container-fluid">
         <div class="row top-row-">
           <div class="div-one-third">
@@ -91,7 +111,7 @@
               <a href="work.html" class="btn btn-primary">See More</a>
             </div>
             <aside class="home-right">
-              <a href="about.html" target="_blank"><img src="img/homeheading.png" alt="Website Mobile Development" /></a>
+              <a href="about.html" target="_blank"><img src="img/homeheadig.png" alt="Website Mobile Development" /></a>
             </aside>
           </div>
         </section>
@@ -103,7 +123,7 @@
             <h3 class="feature-name">Lorem Ipsum</h3>
             
             <div class="featureimg-box">
-                 <a href="about.html"><img src="img/web.png" width="60"></a>
+                 <a href="work.html"><img src="img/web.png" width="60"></a>
             </div>
 
             <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -115,7 +135,7 @@
                 <h3 class="feature-name">Lorem Ipsum</h3>
 
                 <div class="featureimg-box">
-                    <a href="about.html"> <img src="img/graphic.png" width="60"></a>
+                    <a href="work.html"> <img src="img/graphic.png" width="60"></a>
                 </div>
                 <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </p>
@@ -127,18 +147,61 @@
                 <h3 class="feature-name">Lorem Ipsum</h3>
 
                 <div class="featureimg-box">
-                     <a href="about.html"> <img src="img/mobile.png" width="60"></a>
+                     <a href="work.html"> <img src="img/mobile.png" width="60"></a>
                 </div>
                 <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </p>
             </div>
           </div>
         </div>
-   
        
-
-      <script>
-       /*carousel code*/
+       
+       <div class="full-width margintop " id="experience">
+        	<aside class="whitebackground exp div-70-percent floatleft">
+              <h2 class="">Lorem Ipsum</h2>
+              <p class="">
+              <ul>
+              <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </li>
+              <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </li>
+              <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+               <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </ul>
+              <button type="submit" class="btn btn-secondary" onClick="window.location = 'about.html';">More Details</button>
+              </p>
+            </aside>
+             <section class="row floatright div-one-third desktop">
+             <a href="about.html"><img src="img/experience.jpg" alt="Image" class="img-full square-img" /></a>
+        	</section>
+        </div>
+       <div class="clear"></div>
+       
+       
+       
+         <div class="full-width margintop paddingtop" id="edu">
+        	<section class="whitebackground exp div-70-percent floatright">
+              <h2 class="">Lorem Ipsum</h2>
+              <p class="">
+              <table>
+              <tr class="bold"><td colspan="2">Lorem Ipsum</td></tr>
+              <tr><td>Lorem Ipsum</td><td align="right">Lorem Ipsum</td></tr>
+              <tr class="bold"><td colspan="2">Lorem Ipsum</td></tr>
+              <tr><td>Lorem Ipsum</td><td align="right">Lorem Ipsum</td></tr>
+              <tr class="bold"><td colspan="2">Bachelor Of Computer Application</td></tr>
+              <tr><td>BLorem Ipsum</td><td align="right">Lorem Ipsum</td></tr>
+              </table>
+              <button type="button" class="btn btn-secondary" onClick="window.location = 'about.html';">SEE MORE</button>
+              </p>
+            </section>
+             <aside class="row floatleft div-one-third desktop">
+            <a href="work.html"> <img src="img/education.jpg" alt="Image" class="img-full square-img" /></a>
+        	</aside>
+        </div>
+       <div class="clear"></div>
+       
+        <script>
+             /*carousel code*/
 	   var slideIndex = 1;
 	  showSlides(slideIndex);
 	  
@@ -165,7 +228,7 @@
 		slides[slideIndex-1].style.display = "block";  
 		dots[slideIndex-1].className += " active";
 	  } 
-      </script>
+            </script>
         <footer class="row">
           <p class="full-width text-white text-center copyright-text">
             Copyright &copy; 2021  - All Rights Reserved
