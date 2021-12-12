@@ -459,7 +459,7 @@ p {
 
 
 
-
+/* general div design to be use for other pages too */
 
 .container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
 
@@ -478,4 +478,106 @@ p {
 .container-fluid {
   max-width: 1310px;
 }
+
+/* responsive codes for media queries */
+img{max-width:100%;}
+.navbar-toggler{display:none;}
+@media (min-width:1600px){
+.container-fluid {
+  max-width: 1500px;
+}
+}
+@media (min-width: 1200px) { 
+.container-fluid {
+  max-width: 1100px;
+}
+
+}
+@media (max-width:1199px){
+.container-fluid {
+  max-width: 1000px;
+}	
+}
+@media (max-width:992px){
+.small, small {
+  font-size: 11px;
+}
+.top-name {
+  font-size: 1.3rem;
+}
+}
+
+@media (max-width:768px){
+	
+.homecarousel .text b, .titles{
+font-size: 26px;
+}	
+.container-fluid {
+  max-width: 700px;
+}
+
+
+.home-title {
+  font-size: 2.7rem;
+  margin-bottom: 30px;
+}
+
+.div-one-third {
+  -ms-flex: 99%;
+  flex: 99%;
+  max-width: 99%;
+}
+
+#myFeatures {
+  padding-top: 18px;
+  padding-bottom: 6px;
+  max-width: 100%;
+}
+.feature-box {
+  max-width: 100%;
+  min-height: 200px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 9px 5px;
+  margin-bottom: 10px;
+}
+.feature-name {
+  margin-bottom: 9px;
+}
+.featureimg-box{margin-bottom:6px;}
+.div-70-percent {
+  -ms-flex: 100%;
+  flex: 100%;
+  max-width: 100%;
+}
+.top-container{margin:0px auto 15px auto;max-height:150px;}
+.navigationbar{max-height:100px;}
+
+.exp {
+padding:15px;  width: 100%;min-height:336px;
+}
+
+.desktop{display:none;}
+
+}
+
+.navbar-nav .icon{display: none;}
+.navbar-nav {
+  overflow: hidden;
+}
+
+@media (max-width:480px){
+.homecarousel .text b, .titles{
+font-size: 19px;
+}
+body{font-size:15px;}
+.home-container {
+  display: block;
+}
+.home-left {  max-width: 90%;  margin-right: 5%;  margin-left: 5%;  width: 90%;}
+
+.home-right {  width: 90%;  text-align: center;  margin: 20px 5% 5px 5%;;}
+}
+
+
 
