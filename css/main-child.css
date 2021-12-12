@@ -11,6 +11,19 @@
   background-size: cover;
 }
 
+.scroll-tour {
+  min-height: 1100px;
+  background: transparent;
+  background-image: url("../img/8.jpg");
+  height: 100%; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 .background-lowopacity {
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -405,9 +418,60 @@ display:block;width:100%;height:calc(1.5em + .75rem + 2px);padding:.375rem .75re
 video{width:100%; height:auto;}
 .tab-links img{ border-radius:50%;}
 .textshadow{ text-shadow:2px 2px 2px #000;}
+.padding10{padding:10px 6px;}
+.padding45{padding:45px;}
+.tour-overview, .flight-overview {
+  padding: 0px;
+  display: flex;
+}
+.tour-overview li{
+  border-bottom: 1px dashed #ddd;
+  clear: left;
+  float: left;
+  line-height: 40px;
+  width: 48%;
+  font-size: 14px;
+  font-weight: 600;
+}
+.tour-overview li span{
+color:#66c7f6; margin-right:6px;
+}
+.tour-overview li:nth-child(2n) {
+  float: right;
+  clear: right;
+}
+.tour-overview ul {
+  list-style: none;
+  padding: 12px 20px;
+  width: 100%;
+  border: 2px solid #e8ecec;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
 
-
-
+.scroll-l {
+  min-height: 1100px;
+  background: transparent;
+  background-image: url("../img/5.jpg");
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.scroll-m {
+  min-height: 1100px;
+  background: transparent;
+  background-image: url("../img/2.jpg");
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* responsive codes for media queries */
 img{max-width:100%;}
 .container-fluid {
@@ -639,5 +703,5 @@ width: 100%;
   flex-direction: column;
 }.nav-mobileview .navbar-nav .nav-link{padding:3px;}
 .workhead{margin-top:45px;}
-
+.tour-overview li:nth-child(2n){float:none;}
 }
