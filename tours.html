@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Travel Boom Tours</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
+    <link rel="stylesheet" href="css/main-child.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+<script src="js/jquery.min.js"></script>
+<script>
+function myFunction() {
+  var x = document.getElementById("nv");
+  if (x.className === "navbar-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar-nav";
+  }
+}
+</script>
+  </head>
+  <body>  
+      <div class="container-fluid">
+        <div class="row top-row-">
+          <div class="div-one-third">
+            <div class="top-container background-lowopacity-">
+              <img src="img/logo.png">
+            </div>
+          </div>
+          <div class="div-70-percent">
+           
+              <div class="navigation">
+              <nav class="navbar nav-mobileview navbar-light background-lowopacity- navigationbar">              
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav" id="nv">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home </a><div class="navigation-link-highlight"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a><div class="navigation-link-highlight"></div>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="tours.html">Tours</a><div class="navigation-link-highlight"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a><div class="navigation-link-highlight"></div>
+                    </li>
+                   <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <img src="img/togglemenu.png"></a>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+
+</div>
+ <!--slider strt--> 
+    <div class="full-width">
+        	<section class="backgroungblackopacity ">
+                <img src="img/2.jpg" style="width:100%">
+            </section>
+        </div>
+       <div class="clear"></div>   
+    <!--slider end-->
+
+
+<div class="container-fluid padding50 text-center">
+<div class="fontstyle"><h1><span class="borderbottom">Travel Boom Tours</span></h1></div>
+<p><h2>We offer different tours in three countries</h2></p>
+<p><button type="submit" class="btn btn-secondary" onClick="window.location = 'contact.html';">Contact Us For Details</button></p>
+</div>
+ <div class="clear"></div>  
+
+ <div class="scroll-effectinner" data-parallax="scroll"> 
+ <div class="container-fluid">
+
+        <section class="row" id="work-contact">
+            
+          <div class="full-width tabs-container margintop padding50">
+              <div class="tab-links">
+                    <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                        <li><a href="#tab1" class="active">
+                            <div class="icon-wrap"> <img src="img/h3.jpg" width="100"></div>
+                            Dubai Tours                      
+                        </a></li>
+                        <li><a href="#tab2" class="">
+                            <div class="icon-wrap"> <img src="img/h2.jpg" width="100"></div>
+                            Maldive Tours             
+                        </a></li>
+                        <li><a href="#tab3" class="">
+                            <div class="icon-wrap"> <img src="img/h1.jpg" width="100"></div>
+                            London City Tours            
+                        </a></li>                    
+                    </ul>
+                </div>  
+                <div class="tab-contents">
+                    <div id="first-tab-group" class="tabgroup">
+                        <div id="tab1">                            
+                            <div class="text-content">
+                                <h3 class="work-tab-title">Dubai Tours</h3>
+                                <p class="work-tab-p">We Offer Two Tours To Dubai
+                                </p>                            
+
+
+      
+                            </div>
+                        </div>
+                        <div id="tab2">
+                           
+                        </div>
+                        <div id="tab3">
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>     
+        </section>
+        
+
+     
+       <div class="clear"></div>
+
+      </div>
+    </div>
+
+       <footer class="row">
+          <p class="full-width text-white text-center copyright-text">
+            Copyright &copy; 2021  - All Rights Reserved
+          </p>
+        </footer>
+           
+    <script>
+        $(function(){
+            $('.tabgroup > div').hide();
+            $('.tabgroup > div:first-of-type').show();  
+            $('.tabs a').click(function(e){
+              e.preventDefault();
+              var $this = $(this),
+                  tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+                  others = $this.closest('li').siblings().children('a'),
+                  target = $this.attr('href');
+              others.removeClass('active');
+              $this.addClass('active');
+              $(tabgroup).children('div').hide();
+              $(target).show();
+
+              if($(window).width() < 992) {
+                  $('html, body').animate({
+                      scrollTop: $("#first-tab-group").offset().top
+                  }, 200);    
+              }              
+            })  
+	  
+	    });
+      
+	  /*carousel code*/
+	   var slideIndex = 1;
+	  showSlides(slideIndex);
+	  
+	  function plusSlides(n) {
+		showSlides(slideIndex += n);
+	  }
+	  
+	  function currentSlide(n) {
+		showSlides(slideIndex = n);
+	  }
+	  
+	  function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {slideIndex = 1}    
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+	  } 
+	  
+	  /* for smaller screen navigation toggle icon*/
+	  function myFunction() {
+		var x = document.getElementById("nv");
+		if (x.className === "navbar-nav") {
+		  x.className += " responsive";
+		} else {
+		  x.className = "navbar-nav";
+		}
+	  }
+    
+    </script>
+  </body>
+</html>
