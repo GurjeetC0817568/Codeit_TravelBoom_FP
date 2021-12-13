@@ -5,22 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Travel Boom</title>
-<script src="js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
+    <link rel="stylesheet" href="css/main-child.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
   </head>
   <body>
   
-         
-       
-          
-
-  
-  
-       
       <div class="container-fluid">
         <div class="row top-row-">
           <div class="div-one-third">
             <div class="top-container background-lowopacity-">
-              <img src="img/logo.png">
+              <a href="index.html"> <img src="img/logo.png"></a>
             </div>
           </div>
           <div class="div-70-percent">
@@ -40,6 +37,9 @@
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="contact.html">Contact</a><div class="navigation-link-highlight"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="gallery.html">Gallery</a><div class="navigation-link-highlight"></div>
                     </li>
                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <img src="img/togglemenu.png"></a>
                   </ul>
@@ -65,16 +65,9 @@
 <div class="fontstyle"><h1><span class="borderbottom">About Travel Boom</span></h1></div>
 <p><h2>Our History, Our Mission, Our Guides</h2></p>
 <p><button type="submit" class="btn btn-secondary" onClick="window.location = 'contact.html';">Contact Us</button></p>
+<p><a href="sitemap.html">Our SiteMap</a></p>
 
-<!--<div class="div-one-third floatleft margintop paddingtop paddingbottom">
-<img src="img/s1.jpg">
-</div>
-<div class="div-one-third floatleft margintop paddingtop paddingbottom">
-<img src="img/s1.jpg">
-</div>
-<div class="div-one-third floatleft margintop paddingtop paddingbottom">
-<img src="img/s1.jpg">
-</div>-->
+
 </div>
  <div class="clear"></div>  
 
@@ -124,7 +117,7 @@
                 <header class="full-width text-center text-white backgroungblackopacity padding3 app-header paddingtop paddingbottom">
                     <h2 class="text-uppercase mb-3 app-feature-header">Trip Ideas & Itineraries</h2>
                     <p class=" small">Explore Your Perfect Holiday</p>
-               <button type="button" class="btn btn-secondary" onClick="window.location = 'tours.html#experience';">Explore Torus</button>
+               <button type="button" class="btn btn-secondary" onClick="window.location = 'tours.html#experience';">Explore Tours</button>
 
                 </header>
             </div> 
@@ -177,12 +170,8 @@
         
         <div class="clear"></div>
         
- <script>
- 
-alert('Page loaded!');
- /* for smaller screen navigation toggle icon*/
+ <script>/* for smaller screen navigation toggle icon*/
 function myFunction() {
-alert('Page loaded in internet explorer!');
   var x = document.getElementById("nv");
   if (x.className === "navbar-nav") {
     x.className += " responsive";
