@@ -38,7 +38,7 @@
                     <li class="nav-item">
                       <a class="nav-link" href="contact.html">Contact</a><div class="navigation-link-highlight"></div>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                       <a class="nav-link" href="gallery.html">Gallery</a><div class="navigation-link-highlight"></div>
                     </li>
                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <img src="img/togglemenu.png"></a>
@@ -100,7 +100,15 @@
         </section>
      
        <div class="clear"></div> 
-       
+    
+<div class="full-width  text-white  padding45 app-header paddingtop paddingbottom text-center">    
+    <img id="myImg" src="img/6.jpg" alt="Travel Boom" style="width:80%;">
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+ </div>      
 
  <script>
 function myFunction() {
@@ -127,6 +135,23 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+//modal
+// Get the modal
+var modal = document.getElementById("myModal");
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+} 
 </script>       
         
       </div>
