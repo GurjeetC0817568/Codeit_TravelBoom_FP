@@ -704,7 +704,10 @@ width: 100%;
 }.nav-mobileview .navbar-nav .nav-link{padding:3px;}
 .workhead{margin-top:45px;}
 .tour-overview li:nth-child(2n){float:none;}
+#first-tab-group > div{padding:9px 12px;}
+.btn{margin-bottom:3px;}
 }
+.sitemap li a{color:#fff;}
 
 /*masonary images */
 .grid-container {

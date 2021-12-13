@@ -8,7 +8,7 @@ h1{margin-bottom:5px;}
 body {
   background:#000;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: #ffffff;
   overflow-x: hidden;
@@ -537,7 +537,7 @@ font-size: 26px;
 .div-one-third {
   -ms-flex: 99%;
   flex: 99%;
-  max-width: 99%;
+  max-width: 99%;width:99%;margin-left:0.5%;margin-right:0.5%;
 }
 
 #myFeatures {
@@ -589,6 +589,9 @@ body{font-size:15px;}
 .home-left {  max-width: 90%;  margin-right: 5%;  margin-left: 5%;  width: 90%;}
 
 .home-right {  width: 90%;  text-align: center;  margin: 20px 5% 5px 5%;;}
+
+
+
 .navbar-nav li {display: none;}
 .navbar-nav .icon {   float: right;   display: block; width:45px;padding:9px;  right: 10px; position: absolute; }
 .navigationbar {  min-height: 50px;}
@@ -596,7 +599,7 @@ body{font-size:15px;}
 .navbar-nav.responsive .icon {position: absolute;right: 0;top: 0;}
 .navbar-nav.responsive li {float: none;display: block;width: 100%;  }
 .navbar-light.background-lowopacity { background-color: rgba(255, 255, 255, 0.0);}
-.navbar-nav.responsive,.nav-mobileview .navbar-collapse{background-color: rgba(255, 255, 255, 0.8);}
+.navbar-nav.responsive,.nav-mobileview .navbar-collapse{background-color: rgba(0, 0, 0, 1);}
 .navbar-nav.responsive li a { text-align: center;}
 .nav-mobileview .navbar-nav { -ms-flex-direction: columns;flex-direction: column;}
 .nav-mobileview .navbar-nav .nav-link{padding:3px;}
